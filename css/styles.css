@@ -1,0 +1,199 @@
+body{
+	font-family: sans-serif;
+}
+
+.imageHeader{
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 50vh;
+	background: url('https://images8.alphacoders.com/357/357222.jpg') center center;
+	background-repeat: no-repeat;
+    background-size: cover;
+	filter: grayscale(100%);	
+	-moz-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+
+}
+
+.imageHeaderOverlay{
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 50vh;
+	background-color: rgba(38, 43, 43, 0.8);
+	z-index: 1;
+}
+
+.navbar-eshun{
+	background-color: transparent;
+	border-bottom: 3px solid rgba(255,255,255,0.1);
+	z-index: 2;
+	width: 80%;
+}
+
+.navbar{
+	margin-left: 10% !important;
+	height: 80px;
+}
+
+.navbar-brand{
+	color: #fff;
+	font-size: 30px;
+	margin: 8px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+
+.navbar-brand:hover{
+	opacity: 0.5;
+	color: #fff;
+}
+
+.navbar-nav{
+	margin: 29px !important;
+	color: #fff;
+}
+.navbar-nav li{
+	padding: 0 15px;
+	font-size: 12px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	transition: all 0.2s linear;
+}
+
+.navbar-nav li:hover{
+	opacity: 0.7;
+}
+
+.wrapperSearch{
+	margin-top: 8vh;
+	display: block;
+	text-align: center;
+}
+
+.searchText{
+	color: #fff;
+    z-index: 999;
+    font-size: 2.35vw;
+    letter-spacing: 2px;
+}
+
+.belowSearchText{
+	font-size: 1.02vw;
+    color: #1EA479;
+    z-index: 999;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.wrapperSearch input{
+	position: relative;
+	margin: 2vw 0 1vw 0;
+   	z-index: 1000;
+    width: 30vw;
+	height: 4vw;
+	border: 0;
+	padding: 0 1vw;
+	font-size: 1.4vw;
+	letter-spacing: 1px;
+}
+
+.wrapperSearch input:focus, .btnsearch:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+	outline-width: 0;
+}
+
+.btnsearch:hover, .btnsearch:active, .btnsearch:visited, .btnsearch:focus{
+	color: #f2f2f2;
+	opacity: 0.9;
+}
+
+.btnsearch{
+	position: relative;
+	z-index: 999;
+	border-radius: 0;
+	height: 4vw;
+	margin-left: -0.4vw;
+	vertical-align: inherit;
+	border: 0;
+	font-size: 1.3vw;
+	min-width: 6vw;
+}
+
+.btn-eshun {
+    color: #fff;
+    background-color: #1EA479;
+    border-color: #1EA479;
+}
+
+.checklist i{
+	position: relative;
+	color: rgba(255,255,255,0.6);
+	padding: 0 10px;
+	font-size: 10px;
+	z-index: 999;
+}
+
+.divider{
+	width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #505050;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.wrapperBelow{
+	position: absolute;
+	top: 50vh;
+	min-height: 50vh;
+	width: 100vw;
+	left: 0;
+	background-color: #EEEEEE;
+}
+
+.card{
+	background-color: #fff;
+	height: 30vh;
+	margin-top: 10vh;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0 0 20px #EEE;
+	cursor: pointer;
+	transition: all 0.5s linear;
+}
+
+.card:hover{
+	box-shadow: 0 0 20px #DDD;
+}
+
+.card .fa{
+	margin: 1.2vw 0;
+	font-size: 4vw;
+	color: #1EA479;
+}
+
+.card h3{
+	font-size: 2vw;
+	font-family: serif;
+    letter-spacing: 1px;
+}
+
+.card p{
+	font-size: 1vw;
+	color: #999;
+	padding-top: 1vw;
+	letter-spacing: 0.5px;
+}
