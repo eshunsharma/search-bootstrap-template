@@ -1,3 +1,124 @@
+/*===================================
+=								 	=
+=      Author: Eshun Sharma			=
+= Last Modified Date: 22 August 2016 =
+=									=
+====================================*/
+
+
+/*===================================
+=									=
+=   Mobile First Responsive CSS     =
+=									=
+====================================*/
+
+@media only screen and (max-width : 330px) {
+	.wrapperSearch input {
+	    width: 280px !important;
+	}
+
+	.checklist i {
+	    padding: 0px 7px !important;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar {
+	    margin-left: 1% !important;
+	    height: 68px !important;
+	}
+
+	.navbar-eshun {
+	    width: 99% !important;
+	}
+
+	.navbar-brand {
+	    padding: 16px 15px !important;
+	}
+
+	.navbar-toggle {
+	    padding: 10px 9px;
+	    margin-top: 16px;
+	    margin-right: 20px;
+	    border: 1px solid #f8ffff;
+	    border-radius: 1px;
+	}
+
+	.navbar-toggle .icon-bar {
+	    background-color: white;
+	}
+
+	.wrapperSearch {
+	    margin-top: 18vw !important;
+	}
+
+	.navbar-nav {
+	    margin: 10px !important;
+	}
+
+	.navbar-nav li {
+	    padding: 2px 15px !important;
+	    letter-spacing: 2px !important;
+	}
+	.navbar-nav li:hover {
+	    opacity: 0.7;
+	    background-color: #fff;
+	    color: #333;
+	    font-weight: 900;
+	}
+
+	.row:nth-child(1) {
+	    margin-top: 5vh !important;
+	}
+
+	.card {
+	    margin-top: 3vh !important;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 451px) {
+	.wrapperSearch {
+	    margin-top: 13vw !important;
+	}
+}
+
+/* Extra Devices, Phones */ 
+@media only screen and (min-width : 650px) {
+	.wrapperSearch {
+	    margin-top: 11vw !important;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.navbar-nav {
+	    margin: 29px !important;
+	}
+	.wrapperSearch {
+	    margin-top: 6vw !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.navbar-brand {
+	    font-size: 22px !important;
+	    margin: 6px !important;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*===================================
+=									=
+=			Main Page CSS			=
+=									=
+====================================*/
+
 body{
 	font-family: sans-serif;
 }
@@ -7,7 +128,7 @@ body{
 	top: 0;
 	width: 100vw;
 	height: 50vh;
-	background: url('https://images8.alphacoders.com/357/357222.jpg') center center;
+	background: url('../bg.jpg') center center;
 	background-repeat: no-repeat;
     background-size: cover;
 	filter: grayscale(100%);	
@@ -33,7 +154,7 @@ body{
 }
 
 .navbar{
-	margin-left: 10% !important;
+	margin-left: 10%;
 	height: 80px;
 }
 
@@ -53,7 +174,7 @@ body{
 }
 
 .navbar-nav{
-	margin: 29px !important;
+	margin: 29px;
 	color: #fff;
 }
 .navbar-nav li{
@@ -78,12 +199,12 @@ body{
 .searchText{
 	color: #fff;
     z-index: 999;
-    font-size: 2.35vw;
+    font-size: 24px;
     letter-spacing: 2px;
 }
 
 .belowSearchText{
-	font-size: 1.02vw;
+	font-size: 10px;
     color: #1EA479;
     z-index: 999;
     letter-spacing: 2px;
@@ -92,14 +213,14 @@ body{
 
 .wrapperSearch input{
 	position: relative;
-	margin: 2vw 0 1vw 0;
-   	z-index: 1000;
-    width: 30vw;
-	height: 4vw;
-	border: 0;
-	padding: 0 1vw;
-	font-size: 1.4vw;
-	letter-spacing: 1px;
+    margin: 20px 0 10px 0;
+    z-index: 1000;
+    width: 300px;
+    height: 40px;
+    border: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .wrapperSearch input:focus, .btnsearch:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
@@ -113,14 +234,14 @@ body{
 
 .btnsearch{
 	position: relative;
-	z-index: 999;
-	border-radius: 0;
-	height: 4vw;
-	margin-left: -0.4vw;
-	vertical-align: inherit;
-	border: 0;
-	font-size: 1.3vw;
-	min-width: 6vw;
+    z-index: 999;
+    border-radius: 0;
+    height: 40px;
+    margin-left: -4.5px;
+    vertical-align: inherit;
+    border: 0;
+    font-size: 14px;
+    min-width: 60px;
 }
 
 .btn-eshun {
@@ -180,20 +301,20 @@ body{
 }
 
 .card .fa{
-	margin: 1.2vw 0;
-	font-size: 4vw;
-	color: #1EA479;
+	margin: 12px 0;
+    font-size: 48px;
+    color: #1EA479;
 }
 
 .card h3{
-	font-size: 2vw;
-	font-family: serif;
+	font-size: 22px;
+    font-family: serif;
     letter-spacing: 1px;
 }
 
 .card p{
-	font-size: 1vw;
-	color: #999;
-	padding-top: 1vw;
-	letter-spacing: 0.5px;
+	font-size: 12px;
+    color: #999;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
 }
