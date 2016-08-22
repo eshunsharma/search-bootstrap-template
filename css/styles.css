@@ -288,6 +288,7 @@ body{
 .card{
 	background-color: #fff;
 	height: 30vh;
+	min-height: 200px;
 	margin-top: 10vh;
 	padding: 10px;
 	text-align: center;
